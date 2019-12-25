@@ -64,7 +64,7 @@ async function genetic_algorithm(population_size,mutation_rate,target_word)
             break;
         }
         display(stat);
-        await sleep(3);
+        await sleep(5);
     }
 }
 function display(stat)
