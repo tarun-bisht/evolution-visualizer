@@ -27,19 +27,24 @@
             </ul>
         </div>
     </nav>
-    <main class="mt-5">
+    <main class="mt-3">
         <div class="container">
-            <form class="form-inline mb-3">
-                <div class="form-group mb-2">
+            <form class="row">
+                <div class="form-group col-md-3">
+                    <label class="form-group">Target Word</label>
                     <input type="text" class="form-control" id="target-word" value="Genetic Algorithm" placeholder="Enter Target Word">
                 </div>
-                <div class="form-group mx-3 mb-2">
-                    <label class="form-group mx-2">Mutation Rate</label>
+                <div class="form-group col-md-3">
+                    <label class="form-group">Mutation Rate</label>
                     <input type="number" class="form-control" id="mutation-rate" step=0.001 min="0" max="1"  value="0.01">
                 </div>
-                <div class="form-group mx-3 mb-2">
-                    <label class="form-group mx-2">Population Size</label>
+                <div class="form-group col-md-3">
+                    <label class="form-group">Population Size</label>
                     <input type="number" id="population-size" class="form-control" value="800">
+                </div>
+                <div class="form-group col-md-3">
+                    <label class="form-group">Speed</label>
+                    <input type="range" id="speed" class="form-control" min="0" max="2000" value="2">
                 </div>
             </form>
             <button class="btn btn-primary mb-2" id="generate-word">Generate Word</button>

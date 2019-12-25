@@ -1,12 +1,19 @@
 // Author TARUN BISHT
 var best_word_holder,stat_holder,word_history,stat_generation,stat_population_size,stat_mutation_rate;
 var stop=false;
-window.onload=function(){
+var speed=2;
+window.onload=function()
+{
     setup();
 }
 function setup()
 {
     document.getElementById("scroll-pane").scrollIntoView(false);
+    speed_input=document.getElementById("speed");
+    speed_input.addEventListener("change",function()
+    {
+        speed=speed_input.value;
+    });
     let data=get_data();
     display_setter(data);
     genetic_algorithm(data.population_size,data.mutation_rate,data.target_word);
@@ -64,7 +71,7 @@ async function genetic_algorithm(population_size,mutation_rate,target_word)
             break;
         }
         display(stat);
-        await sleep(200);
+        await sleep(speed);
     }
 }
 function display(stat)
