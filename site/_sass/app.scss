@@ -1,11 +1,14 @@
-$desktop:1000px;
-@mixin desktop 
+@import "variables";
+@import "breakpoints";
+
+.buttons
 {
-    @media(max-width:#{$desktop})
+    .button
     {
-        @content;
+        margin-right: 1rem;
     }
 }
+
 .stats
 {
     p
@@ -21,7 +24,7 @@ $desktop:1000px;
         font-weight: 800;
     }
 
-    @include desktop
+    @include break1
     {
         margin-bottom: 2rem;
         #best-word
@@ -43,7 +46,7 @@ $desktop:1000px;
     overflow: auto;
     background:#faf8f8;
 
-    @include desktop
+    @include break1
     {
         height: 300px;
         margin-bottom: 3rem;

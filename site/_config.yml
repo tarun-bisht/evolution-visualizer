@@ -1,0 +1,115 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+encoding: utf-8
+title: Tarun Bisht
+author: Tarun Bisht
+tagline: Hello World I am Tarun and this is my personal, blogging and portfolio website.
+description: >- # this means to ignore newlines until "baseurl:"
+  This is a interative web demo for Genetic Algorithm, It is a search-based optimization technique based on the 
+  principles of Genetics and Natural Selection. This demo try to create given target word from random words 
+  by evolving itself after number of generations.
+
+twitter:
+  card: summary
+  username: itstarunbisht
+
+logo: https://www.tarunbisht.com/assets/images/logo_primary.svg
+  
+baseurl: "/visualize-evolution" # the subpath of your site, e.g. /blog
+url: "https://www.tarunbisht.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+contact:
+  address: Joshi Bhawan Near Thana Kotwali Pithoragarh Uttarakhand PIN 262501
+  email: contact@tarunbisht.com
+
+# default blur image for lazy loading
+blob_image: https://www.tarunbisht.com/assets/images/blur.jpg
+
+
+# website settings
+website:
+  headline: I Build Tech
+  tagline: The Power on your Side
+
+# about section settings
+about:
+  tagline: Aspiring AI Researcher, Developer and Educator
+  description: I am an aspiring AI Researcher, willing to contribute to the advancement of AI. My area of interests for research includes computer vision, deep learning and speech recognition. <br><br>I am also a Physics enthusiasts interested in Astronomy, Quantum Physics and Modern Physics.
+
+# social media usernames
+social:
+  name: Tarun Bisht
+  links:
+    - https://twitter.com/tarun_bisht11
+    - https://www.instagram.com/tarunbisht11
+    - https://www.linkedin.com/in/tarun-bisht11/
+    - https://github.com/tarun-bisht
+    - https://medium.com/@tarunbisht11
+    - https://www.youtube.com/channel/UCSxE20aTc9IJFF3ZQb1cbLA
+    - https://www.kaggle.com/tarunbisht11
+  youtube: https://www.youtube.com/channel/UCSxE20aTc9IJFF3ZQb1cbLA
+  usernames:
+    twitter: itstarunbisht
+    github:  tarun-bisht
+    instagram: itstarunbisht
+    linkedin: tarun-bisht11
+    kaggle: tarunbisht11
+    medium: tarunbisht11
+
+
+# Build settings for scss
+sass:
+  style: compressed
+
+permalink: pretty
+
+# define used plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# syntax highlighting and define markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'syntax'
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
