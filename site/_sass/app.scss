@@ -44,7 +44,7 @@
     padding: 1rem;
     height: 380px;
     overflow: auto;
-    background:#faf8f8;
+    background: var(--primary);
 
     @include break1
     {

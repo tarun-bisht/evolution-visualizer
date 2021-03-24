@@ -6,7 +6,7 @@ urls:
   github: https://github.com/tarun-bisht/evolution-visualizer
 ---
 <!-- Index content here -->
-<section class="container">
+<div class="container">
     <form class="col-4">
         <div>
             <label class="form-group">Target Word</label>
@@ -46,13 +46,13 @@ urls:
             </div>
         </div>
     </div>
-</section>
+</div>
 
-<section class="about">
+<div class="about">
   <h1 class="headline">About</h1>
   <div class="about-panel col-2">
     <div class="about-image" animation="fade-left" animation-time="1s">
-      <img src="{{site.blob_image}}" data-src="{% link assets/images/dna.jpg %}" alt="DNA Image">
+      <img src="{% link {{site.blob_image }} %}" data-src="{% link assets/images/project/dna.jpg %}" alt="DNA Image">
     </div>
     <div class="about-text markdown-html" animation="fade-right" animation-time="1.1s">
       <p>This is a interative web demo for Genetic Algorithm, It is a search-based optimization technique based on the principles of Genetics and Natural Selection</p>
@@ -61,5 +61,5 @@ urls:
       <p>This demo can be used to teach someone about Genetic Algorithm also it can be helpful to visualize how algorithm behaves on tuning or changing parameters like Mutation Rate and Population Size.</p>
     </div>
   </div>
-</section>
+</div>
 

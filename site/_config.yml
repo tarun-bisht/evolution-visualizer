@@ -30,9 +30,9 @@ twitter:
   card: summary
   username: itstarunbisht
 
-logo: https://www.tarunbisht.com/assets/images/logo_primary.svg
+logo: /assets/images/logo_primary.svg
   
-baseurl: "/evolution-visualizer" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tarunbisht.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 contact:
@@ -40,7 +40,7 @@ contact:
   email: contact@tarunbisht.com
 
 # default blur image for lazy loading
-blob_image: https://www.tarunbisht.com/assets/images/blur.jpg
+blob_image: assets/images/blur.jpg
 
 
 # website settings

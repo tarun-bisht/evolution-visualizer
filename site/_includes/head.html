@@ -8,10 +8,10 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta name="color-scheme" content="dark light">
 
-	<link rel="stylesheet" href="https://www.tarunbisht.com/assets/css/style.css">
+	<link rel="stylesheet" href="{{ "/assets/css/style.css" | site_url }}">
 	<link rel="stylesheet" href="{{ "/assets/css/app.css" | relative_url }}">
-	<script src="https://www.tarunbisht.com/assets/js/dark_mode.min.js"></script>
-	<link rel="icon" href="https://www.tarunbisht.com/assets/images/favicon.ico">
+	<script src="{{ "/assets/js/dark_mode.min.js" | site_url }}"></script>
+	<link rel="icon" href="{{ "/assets/images/favicon.ico" | site_url }}">
 	{% seo %}
 	{% include google_tag_manager.html %}
 </head>

@@ -2,8 +2,14 @@
 var best_word_holder,stat_holder,word_history,stat_generation,stat_population_size,stat_mutation_rate;
 var stop=false;
 var speed=2;
+
+animate_containers();
+dark_mode_switch();
 window.onload=function()
 {
+    nav_menu();
+    filter_projects();
+    LazyLoad();
     setup();
 }
 function setup()
