@@ -32,7 +32,7 @@ twitter:
 
 logo: /assets/images/logo_primary.svg
   
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/evolution-visualizer" # the subpath of your site, e.g. /blog
 url: "https://www.tarunbisht.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 contact:
