@@ -8,25 +8,28 @@ layout: base
 	</div>
 </section>
 
-<section class="writing-body container">
-	<h1 class="headline">{{ page.title }}</h1>
-	{{ content }}
-	{% if page.urls %}
-	<div class="col-4 mt-3">
-		{% if page.urls.download %}
-			<a class="link-button" href="{{ page.urls.download }}">Download Now <i class="fas fa-download"></i></a>
-		{% endif %}
-		{% if page.urls.github %}
-			<a class="link-button" href="{{ page.urls.github }}">Github Source <i class="fab fa-github"></i></a>
-		{% endif %}
-		{% if page.urls.youtube %}
-			<a class="link-button" href="{{ page.urls.youtube }}">Youtube Video <i class="fab fa-youtube"></i></a>
+<section class="writing-body">
+	<div class="container">
+		<h1 class="headline">{{ page.title }}</h1>
+		{{ content }}
+		
+		{% if page.urls %}
+		<div class="col-4 mt-3">
+			{% if page.urls.download %}
+				<a class="link-button" href="{{ page.urls.download }}">Download Now <i class="fas fa-download"></i></a>
+			{% endif %}
+			{% if page.urls.github %}
+				<a class="link-button" href="{{ page.urls.github }}">Github Source <i class="fab fa-github"></i></a>
+			{% endif %}
+			{% if page.urls.youtube %}
+				<a class="link-button" href="{{ page.urls.youtube }}">Youtube Video <i class="fab fa-youtube"></i></a>
+			{% endif %}
+		</div>
 		{% endif %}
 	</div>
-	{% endif %}
-	{% if page.comment %}
-		<div class="mt-5">
+	<div class="container">
+		{% if page.comment %}
 			{% include disqus.html %}
-		</div>
-	{% endif %}
+		{% endif %}
+	</div>
 </section>
