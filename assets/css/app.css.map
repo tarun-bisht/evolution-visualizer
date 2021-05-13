@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"app.scss",
+		"_sass/app.scss",
+		"_sass/_variables.scss",
+		"_sass/_breakpoints.scss"
+	],
+	"sourcesContent": [
+		"@import \"app\";\n",
+		"@import \"variables\";\n@import \"breakpoints\";\n\n.buttons\n{\n    .button\n    {\n        margin-right: 1rem;\n    }\n}\n\n.stats\n{\n    p\n    {\n        font-size: 18px;\n        letter-spacing: 1px;\n        font-weight: 700;\n    }\n    #best-word\n    {\n        letter-spacing: 1px;\n        font-size: 48px;\n        font-weight: 800;\n    }\n\n    @include break1\n    {\n        margin-bottom: 2rem;\n        #best-word\n        {\n            padding: 1rem;\n            font-size: 42px;\n            font-weight: 700;\n        }\n        p\n        {\n            text-align: center;\n        }\n    }\n}\n.scroller\n{\n    padding: 1rem;\n    height: 380px;\n    overflow: auto;\n    background: var(--primary);\n\n    @include break1\n    {\n        height: 300px;\n        margin-bottom: 3rem;\n    }\n\n    p\n    {\n        padding: 1rem;\n        text-align: center;\n        font-size: 18px;\n        letter-spacing: 1px;\n        font-weight: 700;\n    }\n}",
+		"// website font\n$font:'Poppins',sans-serif; \n// large screen (desktop, tv)\n$break1:1000px;\n// medium size screen (tablet)\n$break2:768px;\n// small size devices (mobile)\n$break3:460px;",
+		"// large screen breakpoints\n@mixin break1\n{\n    @media only screen and (max-width:#{$break1})\n    {\n        @content;\n    }\n}\n\n// medium screen breakpoints\n@mixin break2\n{\n    @media only screen and (max-width:#{$break2})\n    {\n        @content;\n    }\n}\n\n// small screen breakpoints\n@mixin break3\n{\n    @media only screen and (max-width:#{$break3})\n    {\n        @content;\n    }\n}"
+	],
+	"names": [],
+	"mappings": "ACGA,AAEI,QAFI,CAEJ,OAAO,AACP,CACI,YAAY,CAAE,IAAI,CACrB,AAGL,AAEI,MAFE,CAEF,CAAC,AACD,CACI,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,GAAG,CACnB,WAAW,CAAE,GAAG,CACnB,AAPL,AAQI,MARE,CAQF,UAAU,AACV,CACI,cAAc,CAAE,GAAG,CACnB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CACnB,AErBD,MAAM,oCFQV,CAAA,AAAA,MAAM,AACN,CAgBQ,aAAa,CAAE,IAAI,CAY1B,AA7BD,AAkBQ,MAlBF,CAkBE,UAAU,AACV,CACI,OAAO,CAAE,IAAI,CACb,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,GAAG,CACnB,AAvBT,AAwBQ,MAxBF,CAwBE,CAAC,AACD,CACI,UAAU,CAAE,MAAM,CACrB,CAER,AACD,AAAA,SAAS,AACT,CACI,OAAO,CAAE,IAAI,CACb,MAAM,CAAE,KAAK,CACb,QAAQ,CAAE,IAAI,CACd,UAAU,CAAE,cAAc,CAgB7B,AE3DG,MAAM,oCFsCV,CAAA,AAAA,SAAS,AACT,CAQQ,MAAM,CAAE,KAAK,CACb,aAAa,CAAE,IAAI,CAW1B,CAAA,AArBD,AAaI,SAbK,CAaL,CAAC,AACD,CACI,OAAO,CAAE,IAAI,CACb,UAAU,CAAE,MAAM,CAClB,SAAS,CAAE,IAAI,CACf,cAAc,CAAE,GAAG,CACnB,WAAW,CAAE,GAAG,CACnB"
+}
