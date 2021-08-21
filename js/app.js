@@ -3,13 +3,19 @@ var best_word_holder,stat_holder,word_history,stat_generation,stat_population_si
 var stop=false;
 var speed=2;
 
+//Theme related settings starts here
 animate_containers();
 dark_mode_switch();
+// Theme related settings ends here
+
 window.onload=function()
 {
+    //Theme related settings starts here
     nav_menu();
     filter_projects();
     LazyLoad();
+    // Theme related settings ends here
+    
     setup();
 }
 function setup()
